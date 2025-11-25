@@ -1,0 +1,30 @@
+@baseurl = http://localhost:3000/books
+
+### Books findAll()
+GET {{baseurl}}/
+
+### Books findOne()
+GET {{baseurl}}/
+
+### Books Post()
+POST {{baseurl}}
+Content-Type: application/json
+
+{
+    "title": "Livro 1",
+    "year": 2000,
+    "author": "Leonardo"
+  }
+
+### Books Patch(id)
+PATCH {{baseurl}}/
+Content-Type: application/json
+
+{
+    "title": "Livro 1",
+    "year": 2000,
+    "author": "Leonardo"
+  }
+
+### Books Remove(id)
+DELETE {{baseurl}}/
